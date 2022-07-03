@@ -12,12 +12,21 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "window": {
+        "close": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true
+      },
+      "notification": {
+        "all": true
+      }
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "SocialNetworking",
+      "copyright": "Francisco Silva 2022",
       "deb": {
         "depends": []
       },
@@ -29,8 +38,8 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
-      "longDescription": "",
+      "identifier": "com.speaq.app",
+      "longDescription": "Your new chat app.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -39,7 +48,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "",
+      "shortDescription": "Your new chat app.",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
