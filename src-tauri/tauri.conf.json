@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "client",
+    "productName": "speaq",
     "version": "0.1.0"
   },
   "tauri": {
@@ -26,7 +26,7 @@
     "bundle": {
       "active": true,
       "category": "SocialNetworking",
-      "copyright": "Francisco Silva 2022",
+      "copyright": "Francisco Silva © 2022",
       "deb": {
         "depends": []
       },
@@ -57,7 +57,7 @@
       }
     },
     "security": {
-      "csp": null
+      "csp": "default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
     },
     "updater": {
       "active": false
