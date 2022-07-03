@@ -67,10 +67,12 @@ export const App = () => {
   );
 
   useEffect(() => {
-    if (auth) {
-      socket.connect();
-      socket.emit("addUser", auth.user.id);
-    }
+    if (!auth) return;
+
+    setSelectedUser(auth.user as Friend);
+
+    socket.connect();
+    socket.emit("addUser", auth.user.id);
   }, []);
 
   useEffect(() => {
