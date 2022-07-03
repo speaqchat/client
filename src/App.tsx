@@ -14,6 +14,7 @@ import Friends from "./components/Friends";
 import UserModal from "./components/ProfileModal";
 import SettingsModal from "./components/SettingsModal";
 import SideBar from "./components/SideBar";
+import TitleBar from "./components/TitleBar";
 import SocketContext from "./socketContext";
 import { usePinnedStore, useStore } from "./store/useStore";
 import { Conversation as ConversationType, Friend } from "./types";
@@ -79,8 +80,9 @@ export const App = () => {
   return (
     <SocketContext.Provider value={socket}>
       <div className={settings.darkMode ? "dark" : ""}>
+        <TitleBar />
         <div
-          className="flex w-screen h-screen bg-primary-light text-primary-dark
+          className="flex w-screen h-[calc(100vh-24px)] bg-primary-light text-primary-dark
         dark:bg-primary-dark dark:text-white overflow-hidden"
         >
           <SideBar

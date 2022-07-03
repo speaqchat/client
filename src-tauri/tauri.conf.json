@@ -55,11 +55,10 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
         "resizable": true,
         "title": "speaq",
-        "width": 800
+        "maximized": true,
+        "decorations": false
       }
     ]
   }

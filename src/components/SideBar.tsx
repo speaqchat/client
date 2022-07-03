@@ -150,7 +150,7 @@ const SideBar = ({
         onClick={settingsOnClick}
         // @click="$emit('toggleSettingsModal')"
         className="text-tertiary-light dark:text-tertiary-dark transition-opacity
-      hover:opacity-80 mt-auto cursor-pointer my-6"
+      hover:opacity-80 mt-auto cursor-pointer mb-12"
         width="24"
         height="24"
         viewBox="0 0 24 24"
