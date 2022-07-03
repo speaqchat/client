@@ -251,7 +251,7 @@ export const App = () => {
         </div>
 
         <AnimatePresence>
-          {selectedConversation?.friend && userModalVisible && selectedUser ? (
+          {userModalVisible && selectedUser ? (
             <UserModal
               onClick={(e) => {
                 e.stopPropagation();
